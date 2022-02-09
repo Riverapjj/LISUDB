@@ -1,11 +1,11 @@
 <?php
 
 require 'validaciones.php';
+$errores = array();
 
     if (isset($_POST)) {
 
         extract($_POST);
-        $errores = array();
 
         if (!isset($nombres) || estaVacio($nombres)) {
             array_push($errores, "Debes ingresar el nombre");
@@ -36,8 +36,6 @@ require 'validaciones.php';
         }else if (!esTelefono($telefono)) {
             array_push($errores, "Carnet no válido");
         }
-
-        var_dump($errores);
     }
 
 ?>
