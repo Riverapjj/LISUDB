@@ -15,7 +15,7 @@
     <h1 class="page-header text-center">Calculadora de CUM</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Agregar materia</a>
+            <a href="#addnew" class="btn btn-primary" data-toggle="modal" data-bs-target="#addnew"><span class="glyphicon glyphicon-plus"></span> Agregar materia</a>
             
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
@@ -50,8 +50,8 @@
                         <td><?=$row->uvs?></td>
                         <td><?=$row->nota?></td>
                         <td>
-                            <a href="#update_<?php echo $row->codigo; ?>" data-toggle="modal" class="btn btn-success">Editar</a>
-                            <a href="#delete_<?php echo $row->codigo; ?>" data-toggle="modal" class="btn btn-danger">Borrar</a>
+                            <a data-target="#update_<?php echo $row->codigo; ?>" data-toggle="modal" class="btn btn-success">Editar</a>
+                            <a data-target="#delete_<?php echo $row->codigo; ?>" data-toggle="modal" class="btn btn-danger">Borrar</a>
                         </td>
                     </tr>
                     

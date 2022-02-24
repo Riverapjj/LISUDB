@@ -23,7 +23,7 @@
                       foreach ($errores as $error) {
                         echo "<li>$error</li>";
                       }
-
+                      
                       echo "</div></ul>";
                     }
                   ?>
